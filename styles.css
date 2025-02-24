@@ -410,4 +410,20 @@ header {
     }
   }
   
-  
+  .insta-feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.moodboard-img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.moodboard-img:hover {
+    transform: scale(1.05);
+}
