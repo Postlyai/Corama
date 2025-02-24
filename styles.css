@@ -305,6 +305,14 @@ header {
     padding: 60px 20px;
     text-align: center;
   }
+  .moodboard-img {
+    display: block;
+    width: 200px;
+    height: auto;
+    border: 5px solid rgb(155, 10, 148); /* Solo para pruebas */
+}
+
+
   .moodboard h2 {
     font-family: 'Tiro Bangla', serif;
     font-size: 2.5em;
