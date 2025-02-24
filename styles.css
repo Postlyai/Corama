@@ -418,20 +418,44 @@ header {
     }
   }
   
-  .insta-feed {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
-.moodboard-img {
-    width: 100%;
+.carousel-wrapper {
+    overflow: hidden;
+    width: 900px; /* 3 imágenes de 300px */
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 300px; /* Tamaño fijo */
+    height: 300px; /* Altura fija */
+    object-fit: cover; /* Mantiene las proporciones sin distorsionar */
     border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.5s ease-in-out;
 }
 
-.moodboard-img:hover {
-    transform: scale(1.05);
+button {
+    background: #d669a5;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ff8c42;
 }
