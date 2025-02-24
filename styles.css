@@ -1,0 +1,413 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body y fuentes */
+  body {
+    font-family: 'Gilroy', Arial, sans-serif;
+    background-color: white;
+    color: black;
+    text-align: center;
+  }
+  
+/* Header alineado correctamente */
+header {
+    display: flex;
+    justify-content: center; /* Centra el menú */
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Ajustar el menú de navegación */
+  nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* Lista del menú */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Espaciado uniforme */
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0; /* Elimina cualquier margen que pueda estar desplazando */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ff8c42;
+  }
+  
+  
+ /* Hero alineado correctamente */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido */
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+  }
+  
+  /* Galería de imágenes centrada */
+  .hero-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 900px; /* Ajusta el ancho máximo para que quede alineado */
+  }
+  
+  /* Ajustar el tamaño de las imágenes */
+  .hero-gallery img {
+    width: 300px; /* Asegura un tamaño uniforme */
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ajuste del texto del hero */
+  .hero-text {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+
+  /* Contenedor del efecto flip */
+.flip-container {
+    width: 250px; /* Tamaño de la imagen */
+    height: 350px; /* Tamaño de la imagen */
+    perspective: 1000px; /* Agrega profundidad 3D */
+  }
+  
+  /* Estructura interna */
+  .flip-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  /* Al pasar el cursor, se voltea */
+  .flip-container:hover .flip-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Parte frontal (imagen) */
+  .flip-front, .flip-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Oculta el lado trasero cuando no está activo */
+  }
+  
+  /* Imagen en la parte frontal */
+  .flip-front img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: contain; /* Cambia de 'cover' a 'contain' para evitar que se estiren */
+  }
+  
+  
+  /* Parte trasera con la frase */
+  .flip-back {
+    background: #d669a5; /* Fondo rosado */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    border-radius: 15px;
+    transform: rotateY(180deg); /* Oculta el lado trasero */
+  }
+  
+  
+  /* Texto principal */
+  .hero h1 {
+    font-family: 'Tiro Bangla', serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  /* Botón */
+  .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #d3d3d3;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(to right, #d669a5, #ff8c42);
+    color: white;
+  }
+  
+
+  
+ /* Sección Sobre Corama */
+#sobre-corama {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Fondo suave */
+  }
+  
+  #sobre-corama h2 {
+    font-family: 'Tiro Bangla', serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  #sobre-corama .intro {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #444;
+  }
+  
+  /* Bloques de contenido */
+  .sub-secciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .bloque {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .bloque h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+  
+  .bloque p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  /* Imagen de pieza en proceso */
+  .sobre-imagen {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .sobre-imagen img {
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Botón */
+  .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #d3d3d3;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .btn:hover {
+    background: #d669a5;
+    color: white;
+  }
+  
+  
+  /* 3. Secciones Principales */
+  .secciones-principales {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 60px 20px;
+    justify-content: center;
+  }
+  .secciones-principales .bloque {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  .secciones-principales .bloque:hover {
+    transform: scale(1.05);
+  }
+  .secciones-principales .bloque img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  .secciones-principales .bloque h3 {
+    font-family: 'Tiro Bangla', serif;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  .secciones-principales .bloque p {
+    margin-bottom: 15px;
+  }
+  .secciones-principales .bloque .btn {
+    background-color: #d669a5;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  .secciones-principales .bloque .btn:hover {
+    background-color: #ff8c42;
+  }
+  
+  /* 4. Moodboard */
+  .moodboard {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .moodboard h2 {
+    font-family: 'Tiro Bangla', serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  .grid-moodboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .grid-moodboard img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* 5. Testimonios / Comunidad */
+  .testimonios {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  .testimonios h2 {
+    font-family: 'Tiro Bangla', serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  .testimonios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .testimonio {
+    flex: 1;
+    min-width: 250px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+  }
+  .testimonio img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  .testimonio p {
+    font-style: italic;
+  }
+  
+  /* 6. Newsletter */
+  .newsletter {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .newsletter h2 {
+    font-family: 'Tiro Bangla', serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  .newsletter p {
+    margin-bottom: 20px;
+  }
+  .newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .newsletter-form input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .newsletter-form button {
+    padding: 10px 20px;
+    background-color: #d669a5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .newsletter-form button:hover {
+    background-color: #ff8c42;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #eee;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .sobre-content,
+    .secciones-principales,
+    .testimonios-grid {
+      flex-direction: column;
+    }
+  }
+  
+  
