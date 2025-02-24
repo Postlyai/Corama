@@ -12,17 +12,27 @@
     color: black;
     text-align: center;
   }
+
+  .logo {
+    height: 250px; /* Ajusta el tamaño del logo */
+    width: auto; /* Mantiene la proporción */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Efecto al pasar el mouse */
+}
+
   
-/* Header alineado correctamente */
 header {
     display: flex;
-    justify-content: center; /* Centra el menú */
-    align-items: center;
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
+    justify-content: space-between; /* Espacio entre logo y menú */
+    align-items: center; /* Centra verticalmente */
+    padding: 10px 20px;
+    height: 80px; /* Mantiene la altura fija */
+}
+
   /* Ajustar el menú de navegación */
   nav {
     display: flex;
@@ -152,27 +162,7 @@ header {
     font-size: 2.5em;
     margin-bottom: 20px;
   }
-  
-  /* Botón */
-  .btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background: #d3d3d3;
-    color: black;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 25px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s, box-shadow 0.3s;
-  }
-  
-  .btn:hover {
-    background: linear-gradient(to right, #d669a5, #ff8c42);
-    color: white;
-  }
-  
-
-  
+    
  /* Sección Sobre Corama */
 #sobre-corama {
     padding: 60px 20px;
@@ -301,6 +291,14 @@ header {
   }
   
   /* 4. Moodboard */
+
+  .moodboard-title {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
   .moodboard {
     padding: 60px 20px;
     text-align: center;
@@ -312,22 +310,6 @@ header {
     border: 5px solid rgb(155, 10, 148); /* Solo para pruebas */
 }
 
-
-  .moodboard h2 {
-    font-family: 'Tiro Bangla', serif;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  .grid-moodboard {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  .grid-moodboard img {
-    width: 100%;
-    border-radius: 10px;
-  }
   
   /* 5. Testimonios / Comunidad */
   .testimonios {
@@ -409,14 +391,6 @@ header {
     border-top: 1px solid #eee;
   }
   
-  /* Responsive */
-  @media (max-width: 768px) {
-    .sobre-content,
-    .secciones-principales,
-    .testimonios-grid {
-      flex-direction: column;
-    }
-  }
   
   .carousel-container {
     display: flex;
@@ -449,13 +423,68 @@ button {
     background: #d669a5;
     border: none;
     color: white;
-    padding: 10px;
-    font-size: 20px;
+    padding: 12px;
+    font-size: 22px;
     cursor: pointer;
     border-radius: 50%;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
     background: #ff8c42;
+    transform: scale(1.1);
 }
+
+/* Posición de las flechas */
+.prev {
+    position: absolute;
+    left: -50px;
+}
+
+.next {
+    position: absolute;
+    right: -50px;
+}
+
+ /* Botón */
+
+  
+ .btn:hover {
+    background: linear-gradient(to right, #d669a5, #ff8c42);
+    color: white;
+  }
+  
+.boton, button {
+    background: #d669a5;
+    border: none;
+    color: white;
+    padding: 12px;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s ease, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.boton {
+    width: 10em;
+    height: 45px;
+}
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .sobre-content,
+    .secciones-principales,
+    .testimonios-grid {
+      flex-direction: column;
+    }
+  }
