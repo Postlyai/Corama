@@ -1,69 +1,76 @@
-/* Reset */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* Body y fuentes */
-  body {
+}
+
+body {
+    margin: 0;
+    padding: 0;
     font-family: 'Gilroy', Arial, sans-serif;
     background-color: white;
     color: black;
     text-align: center;
-  }
+}
 
-  .logo {
-    height: 250px; /* Ajusta el tamaño del logo */
-    width: auto; /* Mantiene la proporción */
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+/* --- HEADER FIJO ARRIBA --- */
+header {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre logo y menú */
+    align-items: center; /* Centra verticalmente */
+    padding: 10px 50px; /* Reduce espacio extra */
+    height: 80px; /* Mantiene la altura fija */
+    width: 100%;
+    position: fixed; /* Fija el header */
+    top: 0;
+    left: 0;
+    background: white; /* Fondo blanco */
+    z-index: 1000; /* Se mantiene arriba de otros elementos */
+    border-bottom: 1px solid #ddd; /* Línea sutil para separación */
+}
+
+/* --- LOGO --- */
+.logo {
+    height: 250px; /* Ajusta el tamaño sin ocupar mucho espacio */
+    width: auto;
+    display: block;
 }
 
 .logo:hover {
     transform: scale(1.1); /* Efecto al pasar el mouse */
 }
 
-  
-header {
+/* --- MENÚ DE NAVEGACIÓN --- */
+nav {
     display: flex;
-    justify-content: space-between; /* Espacio entre logo y menú */
-    align-items: center; /* Centra verticalmente */
-    padding: 10px 20px;
-    height: 80px; /* Mantiene la altura fija */
+    align-items: center;
 }
 
-  /* Ajustar el menú de navegación */
-  nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  /* Lista del menú */
-  nav ul {
+nav ul {
     list-style: none;
     display: flex;
-    gap: 40px; /* Espaciado uniforme */
+    gap: 30px; /* Espaciado entre elementos */
     padding: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin: 0; /* Elimina cualquier margen que pueda estar desplazando */
-  }
-  
-  nav ul li a {
-    text-decoration: none;
+    margin: 0;
+}
+
+nav ul li a {
     color: black;
-    font-size: 20px;
-    transition: color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    color: #ff8c42;
-  }
-  
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav ul li a:hover {
+    color: #d669a5;
+}
+
+/* --- Ajuste del contenido para que no quede oculto por el header fijo --- */
+body {
+    padding-top: 100px; /* Empuja el contenido para evitar que quede debajo del header */
+}
+
   
  /* Hero alineado correctamente */
 .hero {
@@ -488,3 +495,23 @@ button:hover {
       flex-direction: column;
     }
   }
+  /* Botón flotante de WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px; /* Distancia desde abajo */
+    right: 20px; /* Distancia desde la derecha */
+    width: 60px;
+    height: 60px;
+    z-index: 1000; /* Para que siempre esté visible */
+}
+
+.whatsapp-btn img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse */
+.whatsapp-btn:hover img {
+    transform: scale(1.1);
+}
