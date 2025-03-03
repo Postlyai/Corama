@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal - Corama</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="journal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Tiro+Bangla:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="Assets/logo principal.png" alt="Corama Logo" class="logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="DIY.html">DIY Club</a></li>
+                    <li><a href="#toolbox">Toolbox</a></li>
+                    <li><a href="#plan-b">Plan B</a></li>
+                    <li><a href="#on-trend">On Trend</a></li>
+                    <li><a href="journal.html" class="active">Journal</a></li>
+                    <li><a href="#mascotas">Mascotas</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Journal Section -->
+    <section class="hero hero-journal">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Corama Journal</h1>
+                <p class="hero-subtitle">Inspiración, tendencias y consejos para tu vida creativa</p>
+                <div class="decorative-line"></div>
+                <p class="intro">Descubre historias, ideas y proyectos que te inspirarán para explorar nuevas posibilidades creativas. Desde tutoriales paso a paso hasta tendencias actuales, nuestro journal está diseñado para nutrir tu creatividad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post Section -->
+    <section class="featured-post">
+        <div class="container">
+            <div class="section-header">
+                <h2>Artículo Destacado</h2>
+                <div class="decorative-line"></div>
+            </div>
+            <div class="featured-post-container">
+                <div class="featured-post-image">
+                    <img src="Assets/journal/featured-post.jpg" alt="Artículo destacado">
+                    <div class="featured-post-category">Tendencias</div>
+                </div>
+                <div class="featured-post-details">
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar"></i> 28 Feb, 2025</span>
+                        <span><i class="far fa-user"></i> Por Corama Team</span>
+                    </div>
+                    <h3>Colores de primavera: Cómo integrarlos en tus proyectos DIY</h3>
+                    <p>Descubre la paleta de colores que está dominando esta temporada y aprende a incorporarlos en tus creaciones. Desde técnicas de mezcla hasta combinaciones perfectas, te compartimos todo lo que necesitas saber para darle vida a tus proyectos.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Posts Section -->
+    <section class="latest-posts">
+        <div class="container">
+            <div class="section-header">
+                <h2>Artículos Recientes</h2>
+                <div class="decorative-line"></div>
+            </div>
+            <div class="posts-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="tutoriales">Tutoriales</button>
+                <button class="filter-btn" data-filter="tendencias">Tendencias</button>
+                <button class="filter-btn" data-filter="inspiracion">Inspiración</button>
+                <button class="filter-btn" data-filter="consejos">Consejos</button>
+            </div>
+            <div class="posts-grid">
+                <!-- Post Card 1 -->
+                <article class="post-card" data-category="tendencias">
+                    <div class="post-thumbnail">
+                        <img src="Assets/journal/post-1.jpg" alt="Título del post">
+                        <div class="post-category">Tendencias</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> 25 Feb, 2025</span>
+                            <span><i class="far fa-comment"></i> 8 comentarios</span>
+                        </div>
+                        <h3><a href="#">5 técnicas de acuarela que debes probar este mes</a></h3>
+                        <p>Explora nuevas técnicas de acuarela que están ganando popularidad y que añadirán un toque único a tus creaciones artísticas.</p>
+                        <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Post Card 2 -->
+                <article class="post-card" data-category="tutoriales">
+                    <div class="post-thumbnail">
+                        <img src="Assets/journal/post-2.jpg" alt="Título del post">
+                        <div class="post-category">Tutoriales</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> 20 Feb, 2025</span>
+                            <span><i class="far fa-comment"></i> 12 comentarios</span>
+                        </div>
+                        <h3><a href="#">Cómo crear un mural de macramé para principiantes</a></h3>
+                        <p>Guía paso a paso para crear un hermoso mural de macramé incluso si nunca has trabajado con esta técnica.</p>
+                        <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Post Card 3 -->
+                <article class="post-card" data-category="inspiracion">
+                    <div class="post-thumbnail">
+                        <img src="Assets/journal/post-3.jpg" alt="Título del post">
+                        <div class="post-category">Inspiración</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> 18 Feb, 2025</span>
+                            <span><i class="far fa-comment"></i> 5 comentarios</span>
+                        </div>
+                        <h3><a href="#">Artistas latinoamericanos que debes conocer en 2025</a></h3>
+                        <p>Descubre el trabajo de talentosos artistas latinoamericanos que están redefiniendo el arte contemporáneo con sus propuestas innovadoras.</p>
+                        <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Post Card 4 -->
+                <article class="post-card" data-category="consejos">
+                    <div class="post-thumbnail">
+                        <img src="Assets/journal/post-4.jpg" alt="Título del post">
+                        <div class="post-category">Consejos</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> 15 Feb, 2025</span>
+                            <span><i class="far fa-comment"></i> 7 comentarios</span>
+                        </div>
+                        <h3><a href="#">Cómo organizar tu espacio de trabajo para aumentar la creatividad</a></h3>
+                        <p>Tips prácticos para crear un ambiente de trabajo que fomente la inspiración y mejore tu productividad creativa.</p>
+                        <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Post Card 5 -->
+                <article class="post-card" data-category="tutoriales">
+                    <div class="post-thumbnail">
+                        <img src="Assets/journal/post-5.jpg" alt="Título del post">
+                        <div class="post-category">Tutoriales</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> 10 Feb, 2025</span>
+                            <span><i class="far fa-comment"></i> 15 comentarios</span>
+                        </div>
+                        <h3><a href="#">Encuadernación japonesa: una guía para principiantes</a></h3>
+                        <p>Aprende esta tradicional técnica de encuadernación y crea tus propios cuadernos con un estilo único y elegante.</p>
+                        <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <!-- Post Card 6 -->
+                <article class="post-card" data-category="tendencias">
+                    <div class="post-thumbnail">
+                        <img src="Assets/journal/post-6.jpg" alt="Título del post">
+                        <div class="post-category">Tendencias</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> 5 Feb, 2025</span>
+                            <span><i class="far fa-comment"></i> 9 comentarios</span>
+                        </div>
+                        <h3><a href="#">Materiales sostenibles que están revolucionando el mundo DIY</a></h3>
+                        <p>Conoce los nuevos materiales ecológicos que están ganando popularidad y que puedes incorporar en tus proyectos creativos.</p>
+                        <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="load-more-container">
+                <button class="btn btn-secondary" id="loadMoreBtn">Cargar Más</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Categories -->
+    <section class="popular-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explora por Categorías</h2>
+                <div class="decorative-line"></div>
+            </div>
+            <div class="categories-grid">
+                <a href="#" class="category-item" style="background-image: url('Assets/journal/category-1.jpg');">
+                    <div class="category-overlay">
+                        <h3>Tutoriales</h3>
+                        <span>24 artículos</span>
+                    </div>
+                </a>
+                <a href="#" class="category-item" style="background-image: url('Assets/journal/category-2.jpg');">
+                    <div class="category-overlay">
+                        <h3>Tendencias</h3>
+                        <span>18 artículos</span>
+                    </div>
+                </a>
+                <a href="#" class="category-item" style="background-image: url('Assets/journal/category-3.jpg');">
+                    <div class="category-overlay">
+                        <h3>Inspiración</h3>
+                        <span>15 artículos</span>
+                    </div>
+                </a>
+                <a href="#" class="category-item" style="background-image: url('Assets/journal/category-4.jpg');">
+                    <div class="category-overlay">
+                        <h3>Consejos</h3>
+                        <span>12 artículos</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe to Blog -->
+    <section class="subscribe-blog">
+        <div class="container">
+            <div class="subscribe-content">
+                <div class="subscribe-image">
+                    <img src="Assets/journal/subscribe-image.jpg" alt="Suscríbete a nuestro blog">
+                </div>
+                <div class="subscribe-form-container">
+                    <h2>Mantente inspirado</h2>
+                    <p>Suscríbete a nuestro newsletter y recibe los mejores artículos, tutoriales y consejos directamente en tu correo.</p>
+                    <form class="subscribe-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-consent">
+                            <input type="checkbox" id="blog-consent" required>
+                            <label for="blog-consent">Acepto recibir emails de Corama y conozco la política de privacidad.</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Suscribirme</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter (reutilizado del diseño original) -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Suscríbete a Nuestro Newsletter</h2>
+                <p>Recibe inspiración DIY, tutoriales exclusivos y noticias sobre nuestros nuevos productos directamente en tu bandeja de entrada.</p>
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="btn btn-primary">Suscribirse</button>
+                    </div>
+                    <div class="form-consent">
+                        <input type="checkbox" id="consent" required>
+                        <label for="consent">Acepto recibir emails de Corama y conozco la política de privacidad.</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (reutilizado del diseño original) -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="Assets/logo principal.png" alt="Corama Logo" class="footer-img">
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Corama</h4>
+                    <ul>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="diy.html">DIY</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Envíos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:info@corama.com">info@corama.com</a></li>
+                        <li><a href="tel:+3123483109">+57 312 348 31 09</a></li>
+                        <li><a href="#">Bogotá, Colombia</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Síguenos</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                        <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Corama. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://api.whatsapp.com/send?phone=34123456789" class="whatsapp-btn" target="_blank">
+        <span class="tooltip">¿Tienes preguntas? ¡Escríbenos!</span>
+        <img src="Assets/Wha icon.png" alt="WhatsApp">
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/journal.js"></script>
+</body>
+</html>

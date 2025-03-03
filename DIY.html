@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY - Corama</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="diy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Tiro+Bangla:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="Assets/logo principal.png" alt="Corama Logo" class="logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="DIY.html">DIY Club</a></li>
+                    <li><a href="#toolbox">Toolbox</a></li>
+                    <li><a href="#plan-b">Plan B</a></li>
+                    <li><a href="#on-trend">On Trend</a></li>
+                    <li><a href="#journal">Journal</a></li>
+                    <li><a href="#mascotas">Mascotas</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero DIY Section -->
+    <section class="hero hero-diy">
+        <div class="container">
+            <div class="hero-content">
+                <h1>DIY Con Corama</h1>
+                <p class="hero-subtitle">Descubre increíbles ideas y tutoriales para crear con nuestros productos</p>
+                <div class="decorative-line"></div>
+                <p class="intro">Explora nuestra colección de videos DIY para inspirarte y aprender cómo hacer tus propias creaciones con productos Corama. ¡Despierta tu creatividad y haz algo único!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Video Section -->
+    <section class="featured-diy">
+        <div class="container">
+            <div class="section-header">
+                <h2>Video Destacado</h2>
+                <div class="decorative-line"></div>
+            </div>
+            <div class="featured-video-container">
+                <div class="video-wrapper" id="featuredVideo">
+                    <!-- Video destacado se cargará aquí dinámicamente -->
+                </div>
+                <div class="featured-video-details">
+                    <h3 id="featuredTitle">Cargando video destacado...</h3>
+                    <p class="video-date" id="featuredDate"></p>
+                    <p class="video-description" id="featuredDescription"></p>
+                    <a href="#" class="btn btn-primary" id="featuredLink" target="_blank">Ver en YouTube</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest DIY Videos -->
+    <section class="latest-videos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Últimos Tutoriales</h2>
+                <div class="decorative-line"></div>
+            </div>
+            <div class="videos-grid" id="videosGrid">
+                <!-- Videos se cargarán aquí dinámicamente -->
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Cargando videos...</p>
+                </div>
+            </div>
+            <div class="load-more-container">
+                <button class="btn btn-secondary" id="loadMoreBtn">Cargar Más</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIY Categories -->
+    <section class="diy-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Categorías DIY</h2>
+                <div class="decorative-line"></div>
+            </div>
+            <div class="categories-container">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Pintura</h3>
+                    <p>Explora técnicas de pintura y crea obras increíbles</p>
+                    <a href="#" class="btn btn-outline" data-category="pintura">Ver videos</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Regalos</h3>
+                    <p>Ideas para crear regalos personalizados y únicos</p>
+                    <a href="#" class="btn btn-outline" data-category="regalos">Ver videos</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Decoración</h3>
+                    <p>Transforma tu hogar con proyectos decorativos</p>
+                    <a href="#" class="btn btn-outline" data-category="decoracion">Ver videos</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Para Niños</h3>
+                    <p>Actividades divertidas para realizar con los más pequeños</p>
+                    <a href="#" class="btn btn-outline" data-category="ninos">Ver videos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Creations -->
+    <section class="community-creations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Creaciones de la Comunidad</h2>
+                <div class="decorative-line"></div>
+                <p class="intro">¡Muéstranos qué estás creando con productos Corama! Usa el hashtag <span class="instagram-handle">#CoramaDIY</span> en Instagram y tu creación podría aparecer aquí.</p>
+            </div>
+            <div class="community-gallery" id="communityGallery">
+                <!-- Se cargará desde Instagram con JS -->
+                <p class="placeholder-text">Cargando creaciones de la comunidad...</p>
+            </div>
+            <div class="text-center">
+                <a href="https://www.instagram.com/corama" class="btn btn-social" target="_blank">
+                    <i class="fab fa-instagram btn-icon"></i>
+                    Síguenos en Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter (reutilizar el que ya tienes) -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Suscríbete a Nuestro Newsletter</h2>
+                <p>Recibe inspiración DIY, tutoriales exclusivos y noticias sobre nuestros nuevos productos directamente en tu bandeja de entrada.</p>
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="btn btn-primary">Suscribirse</button>
+                    </div>
+                    <div class="form-consent">
+                        <input type="checkbox" id="consent" required>
+                        <label for="consent">Acepto recibir emails de Corama y conozco la política de privacidad.</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (reutilizar el que ya tienes) -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="Assets/logo principal.png" alt="Corama Logo" class="footer-img">
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Corama</h4>
+                    <ul>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="diy.html">DIY</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Envíos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:info@corama.com">info@corama.com</a></li>
+                        <li><a href="tel:+3123483109">+57 312 348 31 09</a></li>
+                        <li><a href="#">Bogotá, Colombia</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Síguenos</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                        <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Corama. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://api.whatsapp.com/send?phone=34123456789" class="whatsapp-btn" target="_blank">
+        <span class="tooltip">¿Tienes preguntas? ¡Escríbenos!</span>
+        <img src="Assets/Wha icon.png" alt="WhatsApp">
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/diy.js"></script>
+</body>
+</html>
