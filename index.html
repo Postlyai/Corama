@@ -3,63 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Corama Atelier</title>
-  <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap" rel="stylesheet">
+  <title>Corama Atelier | Manifiesta, Crea y Brilla</title>
+  <meta name="description" content="Corama Atelier - Un espacio donde el self-love, la creatividad y la autenticidad se entrelazan en cada pieza artesanal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <!-- Favicon -->
+  <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-<!-- Botón flotante de WhatsApp -->
-<a href="https://wa.me/573123483109" target="_blank" class="whatsapp-btn">
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/573123483109" target="_blank" class="whatsapp-btn" aria-label="Contactar por WhatsApp">
     <img src="Assets/Wha icon.png" alt="WhatsApp">
-</a>
+    <span class="tooltip">¿Preguntas? ¡Escríbenos!</span>
+  </a>
 
   <!-- Header -->
   <header>
-    <a href="index.html">
+    <div class="header-container">
+      <a href="index.html" class="logo-container">
         <img src="Assets/logo principal.png" alt="Corama Logo" class="logo">
-    </a>
+      </a>
 
-    <nav>
-      <ul>
-        <li><a href="#diy-club">DIY Club</a></li>
-        <li><a href="#toolbox">Toolbox</a></li>
-        <li><a href="#plan-b">Plan B</a></li>
-        <li><a href="#on-trend">On Trend</a></li>
-        <li><a href="#journal">Journal</a></li>
-        <li><a href="#mascotas">Mascotas</a></li>
-      </ul>
-    </nav>
+      <button class="mobile-menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#diy-club">DIY Club</a></li>
+          <li><a href="#toolbox">Toolbox</a></li>
+          <li><a href="#plan-b">Plan B</a></li>
+          <li><a href="#on-trend">On Trend</a></li>
+          <li><a href="#journal">Journal</a></li>
+          <li><a href="#mascotas">Mascotas</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-gallery">
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-gallery">
         <div class="flip-container">
           <div class="flip-inner">
             <div class="flip-front">
-              <img src="Assets/Principal/1.jpeg" alt="Imagen 1">
+              <img src="Assets/Principal/1.jpeg" alt="Imagen creativa Corama" loading="eager">
             </div>
             <div class="flip-back">
               <p>"Crea sin miedo, brilla sin límites."</p>
             </div>
           </div>
         </div>
-      
+        
         <div class="flip-container">
           <div class="flip-inner">
             <div class="flip-front">
-              <img src="Assets/Principal/2.jpeg" alt="Imagen 2">
+              <img src="Assets/Principal/2.jpeg" alt="Creación artesanal Corama" loading="eager">
             </div>
             <div class="flip-back">
               <p>"Tu creatividad es tu superpoder."</p>
             </div>
           </div>
         </div>
-      
+        
         <div class="flip-container">
           <div class="flip-inner">
             <div class="flip-front">
-              <img src="Assets/Principal/3.jpeg" alt="Imagen 3">
+              <img src="Assets/Principal/3.jpeg" alt="Proyecto DIY Corama" loading="eager">
             </div>
             <div class="flip-back">
               <p>"Todo empieza con una idea y tus manos."</p>
@@ -68,124 +83,228 @@
         </div>
       </div>
       
+      <div class="hero-content">
+        <h1>Manifiesta, Crea y Brilla</h1>
+        <p class="hero-subtitle">Un espacio para despertar tu creatividad y conectar con tu esencia</p>
+        <a href="#diy-club" class="btn btn-primary">Empieza tu Viaje DIY</a>
+      </div>
+    </section>
+
+    <!-- Sobre Corama -->
+    <section id="sobre-corama" class="sobre-corama">
+      <div class="container">
+        <div class="section-header">
+          <h2>Sobre Corama</h2>
+          <div class="decorative-line"></div>
+        </div>
+        
+        <p class="intro">
+          Corama nació de mi propia búsqueda: encontrar lo que realmente me apasiona, crear desde el corazón y sentirme feliz con lo que hago. Es un espacio donde el self-love, la creatividad y la autenticidad se entrelazan en cada pieza.
+        </p>
     
-    <h1>Manifiesta, Crea y Brilla</h1>
-    <a href="#diy-club" class="btn">Empieza tu Viaje DIY</a>
-  </section>
-
-  <!-- Sobre Corama -->
-<section id="sobre-corama">
-    <div class="container">
-      <h2>Sobre Corama</h2>
-      
-      <p class="intro">
-        Corama nació de mi propia búsqueda: encontrar lo que realmente me apasiona, crear desde el corazón y sentirme feliz con lo que hago. Es un espacio donde el self-love, la creatividad y la autenticidad se entrelazan en cada pieza.
-      </p>
-  
-      <div class="sub-secciones">
-        <div class="bloque">
-          <h3>🧶 Modo artesanal & DIY</h3>
-          <p>Cada pieza que creamos – ya sea un bolso tejido, un accesorio de reina o una prenda de crochet – está pensada para reflejar un estilo que respeta el tiempo, dedicación y alma de las manos que la hacen.</p>
-        </div>
-  
-        <div class="bloque">
-          <h3>✨ Manifiesta tu mejor versión</h3>
-          <p>Creemos en el poder de hacer las cosas por nosotras mismas, en la magia de construir una vida alineada a nuestros sueños. Corama es un espacio donde el self-love, la moda consciente y la creatividad se encuentran.</p>
-        </div>
-  
-        <div class="bloque">
-          <h3>💌 Únete a nuestra comunidad</h3>
-          <p>Ya sea que quieras aprender a crear, encontrar inspiración o llevar contigo piezas llenas de intención, Corama es para ti. Explora, sueña y brilla con nosotras.</p>
-        </div>
-      </div>
-  
-      <div class="sobre-imagen">
-        <img src="Assets/Proceso.jpeg" alt="Pieza en proceso">
-      </div>
-  
-      <a href="#journal" class="btn">Conoce nuestra historia</a>
-    </div>
-  </section>
-  
-  <!-- 3. Secciones Principales (Bloques Visuales) -->
-  <section id="secciones-principales" class="secciones-principales">
-    <div class="bloque">
-      <img src="img/planb.jpg" alt="Plan B">
-      <h3>Plan B</h3>
-      <p>Renuncié para emprender y aquí te cuento cómo.</p>
-      <a href="#plan-b" class="btn">Escuchar ahora / Leer el blog</a>
-    </div>
-    <div class="bloque">
-      <img src="img/shop.jpg" alt="Shop Handmade">
-      <h3>Shop Handmade</h3>
-      <p>Creaciones con alma, hechas para ti.</p>
-      <a href="#shop-handmade" class="btn">Explora la tienda</a>
-    </div>
-  </section>
-
-  <!-- 4. Moodboard de Inspiración -->
-   <!-- 4. Moodboard de Inspiración -->
-   <section id="moodboard" class="moodboard">
-    <h2>Moodboard de Inspiración</h2>
-    <div class="grid-moodboard">
-      <!-- Reemplaza con tus imágenes o integra el feed de Instagram -->
-      <img src="Assets/Modboard/Mood board Atelier.png" alt="Inspiración 1">
-    </div>
-    <a href="https://www.pinterest.com" target="_blank" class="btn">Síguenos en Pinterest</a>
-  </section>
-
-
-  <div class="carousel-container">
-    <button id="prevBtn">❮</button>
-    <div class="carousel-wrapper">
-        <div class="carousel">
-            <!-- Aquí se cargarán las imágenes de Instagram dinámicamente -->
-        </div>
-    </div>
-    <button id="nextBtn">❯</button>
-</div>
-
+        <div class="sub-secciones">
+          <div class="bloque">
+            <div class="bloque-icon">🧶</div>
+            <h3>Modo artesanal & DIY</h3>
+            <p>Cada pieza que creamos – ya sea un bolso tejido, un accesorio de reina o una prenda de crochet – está pensada para reflejar un estilo que respeta el tiempo, dedicación y alma de las manos que la hacen.</p>
+          </div>
     
-</section>
-
-
-  <!-- 5. Testimonios o Comunidad -->
-  <section id="testimonios" class="testimonios">
-    <h2>Testimonios / Comunidad</h2>
-    <div class="testimonios-grid">
-      <div class="testimonio">
-        <img src="img/testimonio1.jpg" alt="Cliente 1">
-        <p>"Corama me inspiró a crear mi propio estilo DIY. ¡Totalmente recomendable!"</p>
+          <div class="bloque">
+            <div class="bloque-icon">✨</div>
+            <h3>Manifiesta tu mejor versión</h3>
+            <p>Creemos en el poder de hacer las cosas por nosotras mismas, en la magia de construir una vida alineada a nuestros sueños. Corama es un espacio donde el self-love, la moda consciente y la creatividad se encuentran.</p>
+          </div>
+    
+          <div class="bloque">
+            <div class="bloque-icon">💌</div>
+            <h3>Únete a nuestra comunidad</h3>
+            <p>Ya sea que quieras aprender a crear, encontrar inspiración o llevar contigo piezas llenas de intención, Corama es para ti. Explora, sueña y brilla con nosotras.</p>
+          </div>
+        </div>
+    
+        <div class="sobre-imagen">
+          <img src="Assets/Proceso.jpeg" alt="Pieza artesanal en proceso" loading="lazy">
+        </div>
+    
+        <a href="#journal" class="btn btn-secondary">Conoce nuestra historia</a>
       </div>
-      <div class="testimonio">
-        <img src="img/testimonio2.jpg" alt="Cliente 2">
-        <p>"La autenticidad de Corama se refleja en cada detalle. Me encanta su energía."</p>
+    </section>
+    
+    <!-- Secciones Principales (Bloques Visuales) -->
+    <section id="secciones-principales" class="secciones-principales">
+      <div class="container">
+        <div class="section-header">
+          <h2>Descubre Corama</h2>
+          <div class="decorative-line"></div>
+        </div>
+        
+        <div class="bloques-wrapper">
+          <div class="bloque">
+            <div class="bloque-img-container">
+              <img src="img/planb.jpg" alt="Plan B - Blog sobre emprendimiento">
+            </div>
+            <div class="bloque-content">
+              <h3>Plan B</h3>
+              <p>Renuncié para emprender y aquí te cuento cómo.</p>
+              <a href="#plan-b" class="btn btn-outline">Escuchar ahora / Leer el blog</a>
+            </div>
+          </div>
+          
+          <div class="bloque">
+            <div class="bloque-img-container">
+              <img src="img/shop.jpg" alt="Shop Handmade - Tienda de productos artesanales">
+            </div>
+            <div class="bloque-content">
+              <h3>Shop Handmade</h3>
+              <p>Creaciones con alma, hechas para ti.</p>
+              <a href="#shop-handmade" class="btn btn-outline">Explora la tienda</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="testimonio">
-        <img src="img/testimonio3.jpg" alt="Cliente 3">
-        <p>"Un espacio donde cada creación cuenta una historia única."</p>
-      </div>
-    </div>
-    <a href="#comunidad" class="btn">Únete a la comunidad</a>
-  </section>
+    </section>
 
-  <!-- 6. Newsletter / Call to Action Final -->
-  <section id="newsletter" class="newsletter">
-    <h2>Sé parte del club creativo ✨</h2>
-    <p>Recibe inspiración, tips y lanzamientos exclusivos.</p>
-    <form action="#" method="post" class="newsletter-form">
-      <input type="email" placeholder="Tu correo electrónico" required>
-      <button type="submit" class="boton">Suscribirme</button>
-    </form>
-  </section>
+    <!-- Moodboard de Inspiración -->
+    <section id="moodboard" class="moodboard">
+      <div class="container">
+        <div class="section-header">
+          <h2>Inspiración para crear</h2>
+          <div class="decorative-line"></div>
+        </div>
+        
+        <div class="grid-moodboard">
+          <img src="Assets/Modboard/Mood board Atelier.png" alt="Inspiración visual para proyectos DIY" loading="lazy">
+        </div>
+        
+        <!-- Instagram Carousel -->
+        <div class="instagram-feed">
+          <h3>Síguenos en Instagram <span class="instagram-handle">@corama.atelier</span></h3>
+          
+          <div class="carousel-container">
+            <button id="prevBtn" class="carousel-btn prev-btn" aria-label="Anterior">❮</button>
+            <div class="carousel-wrapper">
+              <div class="carousel">
+                <!-- Aquí se cargarán las imágenes de Instagram dinámicamente -->
+                <div class="carousel-placeholder">Cargando inspiración...</div>
+              </div>
+            </div>
+            <button id="nextBtn" class="carousel-btn next-btn" aria-label="Siguiente">❯</button>
+          </div>
+          
+          <a href="https://www.pinterest.com" target="_blank" class="btn btn-social">
+            <span class="btn-icon">📌</span> Síguenos en Pinterest
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios o Comunidad -->
+    <section id="testimonios" class="testimonios">
+      <div class="container">
+        <div class="section-header">
+          <h2>Lo que dice nuestra comunidad</h2>
+          <div class="decorative-line"></div>
+        </div>
+        
+        <div class="testimonios-grid">
+          <div class="testimonio">
+            <div class="testimonio-img">
+              <img src="img/testimonio1.jpg" alt="Foto de cliente satisfecho" loading="lazy">
+            </div>
+            <div class="testimonio-content">
+              <p>"Corama me inspiró a crear mi propio estilo DIY. ¡Totalmente recomendable!"</p>
+              <div class="testimonio-autor">Ana María, Bogotá</div>
+            </div>
+          </div>
+          
+          <div class="testimonio">
+            <div class="testimonio-img">
+              <img src="img/testimonio2.jpg" alt="Foto de cliente satisfecho" loading="lazy">
+            </div>
+            <div class="testimonio-content">
+              <p>"La autenticidad de Corama se refleja en cada detalle. Me encanta su energía."</p>
+              <div class="testimonio-autor">Lucía, Medellín</div>
+            </div>
+          </div>
+          
+          <div class="testimonio">
+            <div class="testimonio-img">
+              <img src="img/testimonio3.jpg" alt="Foto de cliente satisfecho" loading="lazy">
+            </div>
+            <div class="testimonio-content">
+              <p>"Un espacio donde cada creación cuenta una historia única."</p>
+              <div class="testimonio-autor">Camila, Cali</div>
+            </div>
+          </div>
+        </div>
+        
+        <a href="#comunidad" class="btn btn-secondary">Únete a la comunidad</a>
+      </div>
+    </section>
+
+    <!-- Newsletter / Call to Action Final -->
+    <section id="newsletter" class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Sé parte del club creativo ✨</h2>
+          <p>Recibe inspiración, tips y lanzamientos exclusivos directamente en tu correo.</p>
+          <form action="#" method="post" class="newsletter-form">
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+              <button type="submit" class="btn btn-primary">Suscribirme</button>
+            </div>
+            <div class="form-consent">
+              <input type="checkbox" id="consent" name="consent" required>
+              <label for="consent">Acepto recibir emails con novedades e inspiración de Corama Atelier</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Corama Atelier. Todos los derechos reservados.</p>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="Assets/logo principal.png" alt="Corama Logo" class="footer-img">
+      </div>
+      
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Explora</h4>
+          <ul>
+            <li><a href="#diy-club">DIY Club</a></li>
+            <li><a href="#toolbox">Toolbox</a></li>
+            <li><a href="#plan-b">Plan B</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Conéctate</h4>
+          <ul>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://pinterest.com" target="_blank">Pinterest</a></li>
+            <li><a href="https://tiktok.com" target="_blank">TikTok</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Información</h4>
+          <ul>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#terminos">Términos y Condiciones</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Corama Atelier. Todos los derechos reservados.</p>
+      </div>
+    </div>
   </footer>
 
-  <script src="./Script.js"></script>
-
+  <script src="./script.js"></script>
 </body>
 </html>
-
